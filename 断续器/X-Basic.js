@@ -21,8 +21,8 @@
 	(C) 2022 NLTech Coporation
 	======================
 */
+//This is Open Source Version X-Ray.JS for Commercial Version User Please Contact us via social media
 
-// Use Stirct Mode
 "use strict";
 
 let Get_Version = () =>{
