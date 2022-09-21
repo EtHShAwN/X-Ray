@@ -22,11 +22,9 @@
 	======================
 */
 
-// Use Stirct Mode
 "use strict";
 
 let Get_Version = () =>{
-	// Version Information Function
 	const Version = ["0.0.0.01_dev_Alpha","Build 04"];
 	return Version;
 }
@@ -54,6 +52,7 @@ function Attribute(Object,Selector,Name){
 }
 
 function Set_StyleSheet(Object){
+	//This Functions is not done yet!
 	let style = Object.style;
 	return style;
 }
