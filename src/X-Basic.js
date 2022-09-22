@@ -54,5 +54,7 @@ function Attribute(Object,Selector,Name){
 function Set_StyleSheet(Object){
 	//This Functions is not done yet!
 	let style = Object.style;
+	//List all the functions in the console
+	console.log(style.dir());
 	return style;
 }
