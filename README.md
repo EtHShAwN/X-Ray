@@ -4,3 +4,4 @@ A Lite Front-End Web Application Development Package Build With Pure Javascript.
 # Version 0.0.0.01 Feature  
 ***1.A Basic DOM Mangment System (including element create and attributes set)***  
 ***2.Avaliable Get Version Info Function***
+***3.Element Style Managing Function***
