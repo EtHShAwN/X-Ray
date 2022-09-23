@@ -11,7 +11,7 @@
 		This File is Used to Create
 		Basic HTML & DOM
 	-------------------------------------
-	Last Modify: 2022/9/21-20:35
+	Last Modify: 2022/9/22-22:35
 	-------------------------------------
 	Author: Ethan Shen
 	-------------------------------------
@@ -22,9 +22,11 @@
 	======================
 */
 
+// Use Stirct Mode
 "use strict";
 
 let Get_Version = () =>{
+	// Version Information Function
 	const Version = ["0.0.0.01_dev_Alpha","Build 04"];
 	return Version;
 }
@@ -51,10 +53,13 @@ function Attribute(Object,Selector,Name){
 	return Attr;
 }
 
-function Set_StyleSheet(Object){
-	//This Functions is not done yet!
-	let style = Object.style;
-	//List all the functions in the console
-	console.log(style.dir());
+function Get_Style(Element){
+	let style = Element.style;
 	return style;
 }
+
+let CCSS = 'border-top-right-radius:10px;border-bottom-right-radius:10px;'+
+	'border:solid 1px #000000;'+
+	'background-image:linear-gradient(to right ,#FA709A, #330867);'+
+	'color:#FDECA6;';
+console.log(`%c 👾X-Ray.JS Version:${Get_Version()[0]}[${Get_Version()[1]}]  `,CCSS);

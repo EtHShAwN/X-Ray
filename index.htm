@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="src/X-Basic.js"></script>
 		<script>
 			// 之后放到action.js里
-			Create_Element('head','title','X-Ray Framework');
+			Create_Element('head','title','X-Ray Framework X-Ray.JS👾');
 			Create_Element('body','h1','侬好 | こんにちは | 안녕하세요 | Hi');
 			let version = Get_Version();
 			Create_Element('body','h2',`当前的X-Ray版本:${version[0]}(${version[1]})`);
@@ -20,14 +20,17 @@
 			let d = new Date();
     		let t = d.toLocaleTimeString();
     		time = Create_Element('body','div','当前时间:'+t);
+    		time.style.color = '#CC0B00';
 			time_attr = Attribute(time,'id','time');
 			function Time() {
 				let d = new Date();
 				let t = d.toLocaleTimeString();
 				text = document.getElementById('time');
+				text.style.color = '#CC0B00';
 				text.innerHTML="当前时间:"+t;
 			}
 			window.setInterval(Time,1000);
+			Create_Element('body','div',`Time元素的RGB属性为:${Get_Style(time).color}`);
 			
 		</script>
 	</body>
