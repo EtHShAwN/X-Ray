@@ -11,7 +11,7 @@
 		This File is Used to Create
 		Basic HTML & DOM
 	-------------------------------------
-	Last Modify: 2022/9/23-21:20
+	Last Modify: 2022/9/22-22:35
 	-------------------------------------
 	Author: Ethan Shen
 	-------------------------------------
@@ -22,9 +22,11 @@
 	======================
 */
 
+// Use Stirct Mode
 "use strict";
 
 let Get_Version = () =>{
+	// Version Information Function
 	const Version = ["0.0.0.01_dev_Alpha","Build 04"];
 	return Version;
 }
