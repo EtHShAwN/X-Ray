@@ -1,5 +1,5 @@
 Create_Element('head','title','X-Ray Framework X-Ray.JS👾');
-Create_Element('body','h1','侬好 | こんにちは | 안녕하세요 | Hi');
+title = Create_Element('body','h1','侬好 | こんにちは | 안녕하세요 | Hi');
 let version = Get_Version();
 Create_Element('body','h2',`当前的X-Ray版本:${version[0]}(${version[1]})`);
 Create_Element('body','h3','----- Get Device Info Function Test -----');
@@ -19,3 +19,8 @@ function Time() {
 	text.innerHTML="当前时间:"+t;
 }
 window.setInterval(Time,1000);
+let s_Title = Get_Style(title);
+s_Title.color = '#CDFFAB';
+s_Title.backgroundColor = '#AFAFDF';
+s_Title.textAlign = 'center';
+s_Title.borderRadius = '10px';
