@@ -56,8 +56,5 @@ function Get_Style(Element){
 	return style;
 }
 
-let CCSS = 'border-top-right-radius:10px;border-bottom-right-radius:10px;'+
-	'border:solid 1px #000000;'+
-	'background-image:linear-gradient(to right ,#FA709A, #330867);'+
-	'color:#FDECA6;';
+let CCSS = 'border-top-right-radius:10px;border-bottom-right-radius:10px;border:solid 1px #000000;background-image:linear-gradient(to right ,#FA709A, #330867);color:#FDECA6;';
 console.log(`%c 👾X-Ray.JS Version:${Get_Version()[0]}[${Get_Version()[1]}]  `,CCSS);
