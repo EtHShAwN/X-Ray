@@ -1,3 +1,4 @@
-/*
-X-Style.js
-*/
+function Get_Style(Element){
+	let style = Element.style;
+	return style;
+}
