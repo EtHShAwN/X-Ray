@@ -16,9 +16,6 @@
 	Author: Ethan Shen
 	-------------------------------------
 	Version: 0.0.0.01_dev_Alpha
-	-------------------------------------
-	Copy Right
-	(C) 2022 NLTech Coporation
 	======================
 */
 function Get_Style(Element){
