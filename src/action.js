@@ -1,3 +1,5 @@
+// Page Action Script
+printf('Hello World');
 Create_Element('head','title','X-Ray Framework X-Ray.JS👾');
 title = Create_Element('body','h1','侬好 | こんにちは | 안녕하세요 | Hi');
 let version = Get_Version();
@@ -26,5 +28,3 @@ s_Title.textAlign = 'center';
 s_Title.borderRadius = '10px';
 link = Create_Element('body','a','More Detail Please Visit Our Website');
 link_attr = Attribute(link,'href','https://github.com/PHAGE-Official/X-Ray');
-//Extremely Bad Mood
-alert("Live Fast,Die Young");

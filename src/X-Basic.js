@@ -11,11 +11,14 @@
 		This File is Used to Create
 		Basic HTML & DOM
 	-------------------------------------
-	Last Modify: 2022/9/25-10:57
+	Last Modify: 2022/9/22-22:35
 	-------------------------------------
 	Author: Ethan Shen
 	-------------------------------------
 	Version: 0.0.0.01_dev_Alpha
+	-------------------------------------
+	Copy Right
+	(C) 2022 NLTech Coporation
 	======================
 */
 
@@ -48,5 +51,20 @@ function Attribute(Object,Selector,Name){
 	return Attr;
 }
 
+/*
+
+	*Provide a Standard In/Out Stream Function
+
+*/
+function printf(){
+	if (typeof(arguments[0]) == 'undefined') {
+		console.error('Stderr::No Legal String Value Detected');
+	}
+	// First Parameter is Assumed as Target String
+	let String =  arguments[0];
+	console.log(String);
+}
+
+// Later successor by printf() function
 let CCSS = 'border-top-right-radius:10px;border-bottom-right-radius:10px;border:solid 1px #000000;background-image:linear-gradient(to right ,#FA709A, #330867);color:#FDECA6;';
 console.log(`%c 👾X-Ray.JS Version:${Get_Version()[0]}[${Get_Version()[1]}]  `,CCSS);
