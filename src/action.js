@@ -3,7 +3,7 @@ printf('Hello World');
 Create_Element('head','title','X-Ray Framework X-Ray.JS👾');
 title = Create_Element('body','h1','侬好 | こんにちは | 안녕하세요 | Hi');
 let version = Get_Version();
-Create_Element('body','h2',`Current X-Ray Version:${version[0]}${version[1]}Code Name:$(version[2])`);
+Create_Element('body','h2',`Current X-Ray Version:${version[0]}${version[1]}Code Name:${version[2]}`);
 Create_Element('body','h3','----- Get Device Info Function Test -----');
 Device = Get_Device_Info();
 UA = Create_Element('body','div',`您的用户代理为:${Device[0]}`);
