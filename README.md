@@ -7,7 +7,9 @@ A Lite Front-End Web Application Development Package Build With Pure Javascript.
 ***`2.Avaliable Get Version Info Function`***  
 **X-Style.JS**  
 ***`1.Element Style Managing Function`***  
+# Future Feature
+**`1.Standard I/O Stream implementd by JavaScript`**  
 # What's More
 ```javascript
-Window.alert('Enjoy your time with X-Ray.JS!');
+window.alert('Enjoy your time with X-Ray.JS!');
 ```
