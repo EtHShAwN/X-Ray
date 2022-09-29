@@ -11,7 +11,7 @@
 		This File is Used to Create
 		Basic HTML & DOM
 	-------------------------------------
-	Last Modify: 2022/9/28-13:45
+	Last Modify: 2022/9/29-20:15
 	-------------------------------------
 	Author: Ethan Shen
 	-------------------------------------
@@ -25,7 +25,7 @@
 "use strict";
 
 let Get_Version = () =>{
-	const Version = ["0.0.0.01_dev_Alpha","Build 05","Midnight"];
+	const Version = ["0.0.0.01_dev_Alpha","Build 04","MidNight"];
 	return Version;
 }
 
@@ -59,6 +59,11 @@ function Attribute(Object,Selector,Name){
 function printf(){
 	if (typeof(arguments[0]) == 'undefined') {
 		console.error('Stderr::No Legal String Value Detected');
+	}
+	if (typeof(arguments[1]) != 'undefined') {
+		if (arguments[1] == '-c') {
+			console.log('Printf --Specified Style');
+		}
 	}
 	let String =  arguments[0];
 	console.log(String);
