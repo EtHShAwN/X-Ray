@@ -1,0 +1,30 @@
+/*
+	Style Sheet
+*/
+h1{
+	color: #805FFF;
+	height: 50px;
+	width: 350px;
+	font-size: 30px;
+	font-style: italic;
+	border-top: solid 3px #0F73FF;
+	border-bottom: solid 5px #0F73FF;
+	border-left: solid 3px #0F73FF;
+	border-right: solid 5px #0F73FF;
+	border-top-right-radius: 30px;
+	background-color: #1E1E1E;
+	line-height: 50px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	text-shadow: 3px 3px 5px #FF00FF;
+	user-select: none;
+}
+div{
+	color: #363636;
+	position: relative;
+	margin-top: 0px;
+	padding-top: 50px;
+}
