@@ -37,5 +37,8 @@ function Create(Parent,Tag){
 function Device(){
 	let Core_Num = navigator.hardwareConcurrency;
 	let hardware = Create('body','div');
+	if (Core_Num == undefined) {
+		Core_Num = 0;
+	}
 	hardware.textContent = 'Your Processor Has '+Core_Num+' Concurrency Core';
 }
