@@ -35,6 +35,9 @@ function Create(Parent,Tag){
 	Create_Element(Parent,Element);
 	return Element;
 }
+function Set_Element_Attiributes(Element,AttributeName,AttributeValue){
+	Element.setAttribute(AttributeName,AttributeValue);
+}
 
 function Device(){
 	let Core_Num = navigator.hardwareConcurrency;

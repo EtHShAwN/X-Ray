@@ -11,3 +11,4 @@ else{
 	CPU_Core_Info = Create('body','div');
 	CPU_Core_Info.textContent = 'Your Processor has '+Device_Info[1]+' Concurrency Core';
 }
+Set_Element_Attiributes(CPU_Core_Info,'id','CPU_Info');
