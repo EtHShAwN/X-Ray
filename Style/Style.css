@@ -22,9 +22,29 @@ h1{
 	text-shadow: 3px 3px 5px #FF00FF;
 	user-select: none;
 }
-div{
+#CPU_Info{
+	background-color: #99B0D1;
 	color: #363636;
-	position: relative;
+	width: 358px;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	margin-top: 50px;
+	margin-left: 0px;
+	border: solid 3px #ADD0FF;
+	user-select: none;
+}
+#CPU_Info:hover{
+	color: #CAFDAB;
+	border: none;
+	box-shadow: 5px 5px 10px #CACACA;
+	text-shadow: 3px 3px 5px #FFCCFF;
+	background-image: linear-gradient(45deg,#6E55AD,#BF2CFD);
+	cursor: pointer;
+}
+#CPU_Core_Info{
+	position: absolute;
+	top: 110px;
+	font-size: 18px;
 	margin-top: 0px;
-	padding-top: 50px;
 }
