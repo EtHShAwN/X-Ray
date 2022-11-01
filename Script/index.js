@@ -20,3 +20,4 @@ function Device_Info() {
 	Set_Element_Attiributes(CPU_Core_Info,'id','CPU_Core_Info')
 	Set_Element_Attiributes(Button,'onclick','')
 }
+console.log(Dom_Tree());

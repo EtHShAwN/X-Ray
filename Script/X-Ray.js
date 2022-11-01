@@ -35,8 +35,16 @@ function Create(Parent,Tag){
 	Create_Element(Parent,Element);
 	return Element;
 }
+
 function Set_Element_Attiributes(Element,AttributeName,AttributeValue){
 	Element.setAttribute(AttributeName,AttributeValue);
+}
+
+function Dom_Tree(){
+	// Not Fully implemented it Should return a Array Object
+	
+	let Tree = document.getElementsByTagName('html')[0];
+	return Tree;
 }
 
 function Device(){
