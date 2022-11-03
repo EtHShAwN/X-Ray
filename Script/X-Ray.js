@@ -40,15 +40,21 @@ function Set_Element_Attiributes(Element,AttributeName,AttributeValue){
 	Element.setAttribute(AttributeName,AttributeValue);
 }
 
-function Dom_Tree(){
-	// Not Fully implemented it Should return a Array Object
-	
-	let Tree = document.getElementsByTagName('html')[0];
-	return Tree;
+function Language_Adjust(){
+	let User_Language = navigator.language;
+	let html = document.getElementsByTagName('html')[0];
+	Set_Element_Attiributes(html,'lang',User_Language);
 }
 
 function Device(){
 	let Core_Num = navigator.hardwareConcurrency;
 	let User_Agent = navigator.userAgent;
 	return [User_Agent,Core_Num]
+}
+
+function INIT(){
+	/* 
+		Setup Basic Javascript & Html Runtime
+	*/
+	Language_Adjust();
 }
