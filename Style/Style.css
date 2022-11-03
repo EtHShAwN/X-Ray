@@ -22,6 +22,10 @@ h1{
 	text-shadow: 3px 3px 5px #FF00FF;
 	user-select: none;
 }
+a{
+	position: absolute;
+	top: 150px;
+}
 #CPU_Info{
 	background-color: #99B0D1;
 	color: #363636;

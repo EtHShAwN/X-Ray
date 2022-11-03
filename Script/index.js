@@ -21,3 +21,8 @@ function Device_Info() {
 	Set_Element_Attiributes(CPU_Core_Info,'id','CPU_Core_Info')
 	Set_Element_Attiributes(Button,'onclick','')
 }
+Download_Link = Create('body','a');
+Download_Link.textContent = 'Download X-Ray';
+Set_Element_Attiributes(Download_Link,
+	'href',
+	'https://github.com/Phage-Official/X-Ray/releases/download/X-Ray/X-Ray.rar')
