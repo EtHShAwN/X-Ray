@@ -4,6 +4,8 @@
 
 	A Lite Front End Developing Framework
 
+			{ X-Ray.js }
+
 */
 
 'use-strict'
@@ -49,12 +51,31 @@ function Language_Adjust(){
 function Device(){
 	let Core_Num = navigator.hardwareConcurrency;
 	let User_Agent = navigator.userAgent;
-	return [User_Agent,Core_Num]
+	let Screen_Size = {'width':window.screen.width,'height':window.screen.height};
+	return [User_Agent,Core_Num,Screen_Size];
 }
 
 function INIT(){
 	/* 
 		Setup Basic Javascript & Html Runtime
 	*/
+	function Platform_Adjust(){
+		let User_Agent = Device()[0];
+		let Screen_Size = Device()[2];
+		let Width = Screen_Size['width'];
+		let Height = Screen_Size['height'];
+		if (Width < 500) {
+			let Device_Type = 'Mobile';
+			let New_Link = Create('head','link');
+			Set_Element_Attiributes(New_Link,'type',"text/javascript");
+			Set_Element_Attiributes(New_Link,'src',"Script\\X-Mobile.js");
+			let Desktop_Link = document.querySelector("script[src]");
+		}
+		else {
+			let Device_Type = 'Desktop'
+		}
+	}
+
 	Language_Adjust();
+	Platform_Adjust();
 }
