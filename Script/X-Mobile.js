@@ -7,6 +7,9 @@
 			{ X-Mobile.js }
 
 */
+
+'use-strict'
+
 function INIT(){
 	function Delete_Old_Style(){
 		// Later we'll replace the remove() with removeChild()
@@ -17,8 +20,4 @@ function INIT(){
 	}
 	Delete_Old_Style();
 }
-function Load_Style(){
-	return;
-}
 INIT();
-Load_Style();

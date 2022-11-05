@@ -1,4 +1,7 @@
-INIT();
+Page = INIT();
+if (Page['Platform'] == 'Mobile'){
+	Load_Style('Style/Mobile.css');
+}
 title = Create('head','title');
 title.textContent = "X-Ray";
 Headline = Create('body','h1');

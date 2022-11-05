@@ -55,6 +55,14 @@ function Device(){
 	return [User_Agent,Core_Num,Screen_Size];
 }
 
+function Load_Style(Style_Sheet_Path){
+	let Style = Create('head','link');
+	Set_Element_Attiributes(Style,'rel','stylesheet');
+	Set_Element_Attiributes(Style,'type','text/css');
+	Set_Element_Attiributes(Style,'href',Style_Sheet_Path);
+	return;
+}
+
 function INIT(){
 	/* 
 		Setup Basic Javascript & Html Runtime
@@ -64,18 +72,23 @@ function INIT(){
 		let Screen_Size = Device()[2];
 		let Width = Screen_Size['width'];
 		let Height = Screen_Size['height'];
+		let Status_Code = [];
 		if (Width < 500) {
 			let Device_Type = 'Mobile';
 			let New_Script = Create('head','Script');
 			Set_Element_Attiributes(New_Script,'type',"text/javascript");
 			Set_Element_Attiributes(New_Script,'src',"Script\\X-Mobile.js");
 			let Desktop_Link = document.querySelector("script[src]");
+			return Device_Type;
 		}
 		else {
-			let Device_Type = 'Desktop'
+			let Device_Type = 'Desktop';
+			return Device_Type;
 		}
 	}
 
 	Language_Adjust();
-	Platform_Adjust();
+	let Status_Code = [];
+	Status_Code['Platform'] = Platform_Adjust();
+	return Status_Code;
 }
