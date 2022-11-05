@@ -66,7 +66,7 @@ function INIT(){
 		let Height = Screen_Size['height'];
 		if (Width < 500) {
 			let Device_Type = 'Mobile';
-			let New_Script = Create('head','script');
+			let New_Script = Create('head','Script');
 			Set_Element_Attiributes(New_Script,'type',"text/javascript");
 			Set_Element_Attiributes(New_Script,'src',"Script\\X-Mobile.js");
 			let Desktop_Link = document.querySelector("script[src]");
