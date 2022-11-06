@@ -29,3 +29,7 @@ Download_Link.textContent = 'Download X-Ray';
 Set_Element_Attiributes(Download_Link,
 	'href',
 	'https://github.com/Phage-Official/X-Ray/releases/download/X-Ray/X-Ray.rar')
+if (Page['Platform'] == 'Mobile'){
+	let D0 = Create('body','div');
+	D0.textContent='You are using Mobile Device';
+}
