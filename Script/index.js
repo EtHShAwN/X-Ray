@@ -33,3 +33,10 @@ if (Page['Platform'] == 'Mobile'){
 	let D0 = Create('body','div');
 	D0.textContent='You are using Mobile Device';
 }
+else{
+	C0 = Create('body','canvas');
+	var ctx = C0.getContext('2d');
+	let s0 = Create('body','script');
+	Set_Element_Attiributes(s0,'type','text/javascript');
+	Set_Element_Attiributes(s0,'src','Script/Game.js');
+}

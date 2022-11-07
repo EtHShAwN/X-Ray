@@ -52,3 +52,11 @@ a{
 	font-size: 18px;
 	margin-top: 0px;
 }
+canvas{
+	position: absolute;
+	left: 400px;
+	width: 800px;
+	height: 600px;
+	border-radius: 15px;
+	background-color: #000;
+}
